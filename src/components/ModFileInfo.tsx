@@ -44,7 +44,7 @@ const ModFileInfo: React.FC<ModFileProps> = ({ projectID, fileID }) => {
   useEffect(() => {
     const headers = {
       Accept: "application/json",
-      "x-api-key": "JDJhJDEwJFhkNkhYT3dweFI1UTIvWGpyZjBkUC5hSDFaRDE5T3pRZC9mVnVNLk94QXJJL01DTlZtNHZh",
+      "x-api-key": "$2a$10$3J35fMNQdRn/jrPzB4WKS.f6en8/e9aQ/08NdojdJ7cYXAk/aGJL2",
     };
     const fetchModData = async () => {
       try {
