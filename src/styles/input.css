@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #262626;
+}
+
+.COMPONENT {
+  @apply rounded-lg bg-white/5 border border-white/10 hover:bg-white/20 hover:border-white/25 transition-colors duration-300 ease-in-out;
+}
+.COMPONENT.DEFAULT {
+  @apply data-[active]:border-blue-300/80 data-[open]:text-blue-300  data-[hover]:text-blue-500 ;
+}
+.COMPONENT.WARNING {
+  @apply data-[active]:border-red-300/80  data-[open]:text-red-300  data-[hover]:text-red-500 ;
+}
+.COMPONENT.SUCCESS {
+  @apply data-[active]:border-green-300/80  data-[open]:text-green-300  data-[hover]:text-green-500 ;
+}
+.COMPONENT.ALERT {
+  @apply data-[active]:border-amber-300/80  data-[open]:text-amber-300  data-[hover]:text-amber-500;
+}
+.BUTTON {
+  @apply p-2 cursor-pointer align-middle shrink-0 items-center justify-center;
+}
+.BUTTONsmall {
+  @apply p-1 cursor-pointer align-middle shrink-0 items-center justify-center;
+}
+.LISTBOX {
+  @apply relative flex w-full py-2 pr-8 pl-3 text-white focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25;
+}
+.ICON {
+  @apply transition duration-200 ease-in-out;
+}
+.ICON.DEFAULT {
+  @apply group-data-[hover]:text-blue-500 group-data-[active]:text-blue-300;
+}
+
+.ICON.WARNING {
+  @apply group-data-[hover]:text-red-500 group-data-[active]:text-red-300;
+}
+
+.ICON.SUCCESS {
+  @apply group-data-[hover]:text-green-500 group-data-[active]:text-green-300;
+}
+
+.ICON.ALERT {
+  @apply group-data-[hover]:text-amber-500 group-data-[active]:text-amber-300;
+}
